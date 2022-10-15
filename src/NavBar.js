@@ -13,8 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Outlet, Link } from "react-router-dom";
-
-const pages = ['Home Page', 'Login', 'Sign up', 'Investment Info'];
+const pages = [{name: 'Home Page', url: 'home_page'}, {name: 'Login', url: 'home_page'}, {name: 'Sign up', url: 'home_page'}, {name: 'Investment Info', url: 'home_page'}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -89,8 +88,8 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,13 +116,13 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 variant="contained"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block', outline: 'none' }}
                 disableElevation
               >
-                <Link style={{textDecoration: 'none', color: 'white'}} to={`../home_page/`}>{page}</Link>
+                <Link style={{textDecoration: 'none', color: 'white'}} to={'../'+page.url+'/'}>{page.name}</Link>
               </Button>
             ))}
           </Box>
