@@ -14,6 +14,7 @@ import Contact from "./routes/contact";
 import HomePage from "./routes/HomePage";
 import LogIn from "./routes/LogIn";
 import SignUp from "./routes/SignUp";
+import InvestmentInfoPage from "./routes/InvestmentInfoPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "signup/",
         element: <SignUp />,
+      },
+      {
+        path: "investment_info_page/",
+        element: <InvestmentInfoPage />,
       },
     ],
     

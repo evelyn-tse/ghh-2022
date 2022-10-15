@@ -16,7 +16,7 @@ export default function Root() {
                 <Link to={`signup/`}>Sign up</Link>
               </li>
               <li>
-                <Link to={`contacts/2`}>Investment Info Page</Link>
+                <Link to={`investment_info_page/`}>Investment Info Page</Link>
               </li>
             </ul>
           </nav>
