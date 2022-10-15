@@ -7,10 +7,16 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-              <Link to={`contacts/1`}>Your Name</Link>
+                <Link to={`contacts/1`}>Home Page</Link>
               </li>
               <li>
-              <Link to={`contacts/2`}>Your Friend</Link>
+                <Link to={`contacts/2`}>Log In</Link>
+              </li>
+              <li>
+                <Link to={`contacts/2`}>Sign up</Link>
+              </li>
+              <li>
+                <Link to={`contacts/2`}>Investment Info Page</Link>
               </li>
             </ul>
           </nav>
