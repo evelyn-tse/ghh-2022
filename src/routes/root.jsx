@@ -26,6 +26,7 @@ export default function Root() {
         <div id="detail">
           <Outlet />
         </div>
+        <div>FOOTER</div>
       </>
     );
   }
