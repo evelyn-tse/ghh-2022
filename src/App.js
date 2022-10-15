@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./Components/Header.js";
 import Body from "./Components/Body.js";
+import React from "react";
 
 
 function App() {
