@@ -13,6 +13,7 @@ import ErrorPage from "./error-page";
 import Contact from "./routes/contact";
 import HomePage from "./routes/HomePage";
 import LogIn from "./routes/LogIn";
+import SignUp from "./routes/SignUp";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "login/",
         element: <LogIn />,
+      },
+      {
+        path: "signup/",
+        element: <SignUp />,
       },
     ],
     
