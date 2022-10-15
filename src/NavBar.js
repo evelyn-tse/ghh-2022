@@ -15,9 +15,9 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { Outlet, Link } from "react-router-dom";
 const pages = [
   { name: "Home Page", url: "home_page" },
-  { name: "Login", url: "home_page" },
-  { name: "Sign up", url: "home_page" },
-  { name: "Investment Info", url: "home_page" },
+  { name: "Login", url: "login" },
+  { name: "Sign up", url: "signup" },
+  { name: "Investment Info", url: "investment_info_page" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
