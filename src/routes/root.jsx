@@ -1,10 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import NavBar from "../NavBar"
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
-          <h1>React Router Nav Bar</h1>
-          <nav>
+        {/* <div id="sidebar"> */}
+          {/* <h1>React Router Nav Bar</h1> */}
+          {/* <nav>
             <ul>
               <li>
                 <Link to={`home_page/`}>Home Page</Link>
@@ -19,8 +20,9 @@ export default function Root() {
                 <Link to={`investment_info_page/`}>Investment Info Page</Link>
               </li>
             </ul>
-          </nav>
-        </div>
+          </nav> */}
+        {/* </div> */}
+        <NavBar />
         <div id="detail">
           <Outlet />
         </div>
