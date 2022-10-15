@@ -5,7 +5,6 @@ import AllCards from "./Roi/AllCards.js";
 const Body = () => {
   return (
     <div>
-        <p>test test hello body</p>
         <AllCards/>
     </div>
   );

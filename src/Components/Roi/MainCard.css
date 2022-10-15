@@ -1,0 +1,10 @@
+.MainCard {
+    margin-left: 93px;
+    margin-right: 93px;
+    margin-top: 0px;
+}
+
+.Content {
+    display: flex;
+    flex-wrap: wrap;
+}
