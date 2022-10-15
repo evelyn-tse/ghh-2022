@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Contact from "./routes/contact";
+import HomePage from "./routes/HomePage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId",
         element: <Contact />,
+      },
+      {
+        path: "home_page/",
+        element: <HomePage />,
       },
     ],
     

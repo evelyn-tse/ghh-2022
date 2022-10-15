@@ -7,7 +7,7 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-                <Link to={`contacts/1`}>Home Page</Link>
+                <Link to={`home_page/`}>Home Page</Link>
               </li>
               <li>
                 <Link to={`contacts/2`}>Log In</Link>
