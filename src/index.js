@@ -12,7 +12,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Contact from "./routes/contact";
 import HomePage from "./routes/HomePage";
-
+import LogIn from "./routes/LogIn";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "home_page/",
         element: <HomePage />,
+      },
+      {
+        path: "login/",
+        element: <LogIn />,
       },
     ],
     

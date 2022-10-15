@@ -10,7 +10,7 @@ export default function Root() {
                 <Link to={`home_page/`}>Home Page</Link>
               </li>
               <li>
-                <Link to={`contacts/2`}>Log In</Link>
+                <Link to={`login/`}>Log In</Link>
               </li>
               <li>
                 <Link to={`contacts/2`}>Sign up</Link>
