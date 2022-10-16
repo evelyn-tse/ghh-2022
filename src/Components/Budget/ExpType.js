@@ -18,13 +18,10 @@ const MenuProps = {
 };
 
 const names = [
-  'Simple Interest',
-  'Compound Interest',
-  'Roth IRA',
-  'Mutual Fund',
-  '401k',
-  'Certificate of Deposit',
-  'High Yield Savings Account'
+  'Food',
+  'Bills',
+  'Transportation',
+  'Personal'
 ];
 
 function getStyles(name, investName, theme) {
@@ -55,13 +52,13 @@ const ExpType = () => {
   return (
     <div>
       <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-name-label">Investment Type</InputLabel>
+        <InputLabel id="demo-name-label">Category</InputLabel>
         <Select
           labelId="demo-name-label"
           id="demo-multiple-name"
           value={investName}
           onChange={handleChange}
-          input={<OutlinedInput label="Investment Type" />}
+          input={<OutlinedInput label="Category" />}
           MenuProps={MenuProps}
         >
           {names.map((name) => (

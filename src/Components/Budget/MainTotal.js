@@ -6,24 +6,35 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "../Roi/InfoCard.css";
-//import { flexbox } from '@mui/system';
-
+import Title from '../RoiCalc/Title.js';
+import "./MainTotal.css";
+import budget from "./budget.jpg";
 
 const MainTotal = props => {
     return (
       <div className = "InfoCard">
         <Card className = "Card" sx={{ maxWidth: 345 }}>
-      <CardMedia
-                component="img"
-                alt="green iguana"
-                height="140"
-                image={props.image}
-      ></CardMedia>
-      <CardContent className = "CardContent">
-        <Typography gutterBottom variant="h5" component="div">
-          {props.title}
+      <CardContent className = "MainContent">
+        <div className="Info">
+          <div className="Total">
+            <Typography component="p" variant="h2">
+                Total
+            </Typography>
+            <Typography component="p" variant="h3">
+                {props.total}
+            </Typography>
+          </div>
+          <div className="Image" >
+          <img src={budget}/>
+          </div>
+        </div>
+        
+        <p></p>
+        <Typography color="text.primary" sx={{ flex: 1 }}>
+        Previous Month Total: $1595.93
         </Typography>
-        <Typography variant="body2" color="text.secondary">{props.content}
+        <Typography color="text.secondary" sx={{ flex: 1 }}>
+        Insert comparison statment
         </Typography>
       </CardContent>
     </Card>

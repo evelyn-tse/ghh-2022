@@ -26,10 +26,10 @@ const Expense = () => {
         <AccordionDetails>
           <Typography>
             <div className="FormOptions">
-              <ExpType/>
               <ExpDate/>
+              <ExpType/>
               <ExpAmount/>
-              <Button variant="contained">Submit</Button>
+              <Button id="Submit" variant="contained">Submit</Button>
             </div>
           </Typography>
         </AccordionDetails>

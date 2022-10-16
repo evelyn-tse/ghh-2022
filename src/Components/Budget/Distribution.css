@@ -1,0 +1,14 @@
+.Distribution {
+    display: flex;
+    flex-direction: row;
+}
+
+
+p {
+    margin-right: 20px;
+    margin-bottom: 13px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}

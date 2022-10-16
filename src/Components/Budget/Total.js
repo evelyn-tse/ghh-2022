@@ -24,7 +24,7 @@ const Total = props => {
             {props.total}
         </Typography>
         <Typography color="text.secondary" sx={{ flex: 1 }}>
-        {props.date}
+        Previous Month Total: ${props.previous}
       </Typography>
       </CardContent>
     </Card>

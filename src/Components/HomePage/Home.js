@@ -2,7 +2,7 @@ import React from "react";
 import MainCard from "../Roi/MainCard.js";
 import image2 from "../Roi/image2.jpeg";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div>
         <p>Home page</p>
@@ -12,4 +12,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
