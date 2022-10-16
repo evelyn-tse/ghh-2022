@@ -55,7 +55,14 @@ const rows = [
   ];
 
 
-const InvestTable = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const InvestTable = ({months, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+
+    React.useEffect(()=>{
+      if(months < 0){
+        return;
+      }
+      alert(months)
+    },[months])
   return (
     <div className="InvestTable">
   <Paper
