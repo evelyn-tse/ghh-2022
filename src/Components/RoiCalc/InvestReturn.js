@@ -35,10 +35,10 @@ const names = [
   "15"
 ];
 
-function getStyles(name, investName, theme) {
+function getStyles(name, investmentReturn, theme) {
   return {
     fontWeight:
-      investName.indexOf(name) === -1
+      investmentReturn.indexOf(name) === -1
         ? theme.typography.fontWeightRegular
         : theme.typography.fontWeightMedium,
   };
@@ -48,24 +48,24 @@ function getStyles(name, investName, theme) {
 const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
     const theme = useTheme();
-    const [investName, setInvestName] = React.useState();
+    const [investmentReturn, setInvestmentReturn] = React.useState();
   
     const handleChange = (event) => {
       const {
         target: { value },
       } = event;
-      setInvestName(
+      setInvestmentReturn(
         // On autofill we get a stringified value.
         typeof value === 'string' ? parseInt(value) : value,
       );
     };
 
     React.useEffect(()=>{
-      if(!investName){
+      if(!investmentReturn){
         return;
       }
-      alert(investName);
-    },[investName])
+      alert(investmentReturn);
+    },[investmentReturn])
 
   return (
     <div>
@@ -74,7 +74,7 @@ const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}
         <Select
           labelId="demo-name-label"
           id="demo-multiple-name"
-          value={investName}
+          value={investmentReturn}
           onChange={handleChange}
           input={<OutlinedInput label="Rate of Return (%)" />}
           MenuProps={MenuProps}
@@ -83,7 +83,7 @@ const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}
             <MenuItem
               key={name}
               value={name}
-              // style={getStyles(name, investName, theme)}
+              // style={getStyles(name, investmentReturn, theme)}
             >
               {name}
             </MenuItem>
