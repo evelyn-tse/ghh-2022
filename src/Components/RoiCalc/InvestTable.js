@@ -24,11 +24,17 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
 
   const [rows, setRows] = React.useState([]);
   const createRows = ()=>{
+    //amount*return_rate=return value
+    //amount=amount+return_value
+    let temp_return_value = 0
+    let amount = parseInt(startingAmount)
     let tempRows = []
     for (let i = 0; i < years; i++) {
-      tempRows.push({year: i})
+      tempRows.push({year: i, return_value: temp_return_value, total: amount})
+      temp_return_value = amount * returnVal
+      amount = amount + temp_return_value
     }
-    tempRows.push({year: years})
+    tempRows.push({year: years, return_value: temp_return_value, total: amount})
     setRows(tempRows);
   }
 
@@ -93,13 +99,16 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
         <TableHead>
           <TableRow>
             <TableCell>Years</TableCell>
-            <TableCell>Return of Investment</TableCell>
+            <TableCell>Return Value</TableCell>
+            <TableCell>Total</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
               <TableCell>{row.year}</TableCell>
+              <TableCell>{row.return_value}</TableCell>
+              <TableCell>{row.total}</TableCell>
             </TableRow>
           ))}
         </TableBody>
