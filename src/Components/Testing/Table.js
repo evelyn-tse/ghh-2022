@@ -23,7 +23,6 @@ const Table = ({tableData}) => {
                             <td>{data.date}</td>
                             <td>{data.category}</td>
                             <td>{data.amount}</td>
-                            setTotal(total + data.amount)
                         </tr>
                     )
                 })
