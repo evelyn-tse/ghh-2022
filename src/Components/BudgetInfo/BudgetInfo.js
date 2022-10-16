@@ -2,6 +2,7 @@ import React from "react";
 import MainCard from "../Roi/MainCard.js";
 import image2 from "../Roi/image2.jpeg";
 
+
 const BudgetInfo = () => {
   return (
     <div>
