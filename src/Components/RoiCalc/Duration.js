@@ -54,12 +54,12 @@ const Duration = ({months, setMonths, buttonClicked, amountMoney, setAmountMoney
     setMonths(monthTextField)
   }, [buttonClicked])
 
-  React.useEffect(()=>{
-    if(months == 0){
-      return;
-    }
-    alert(months)
-  },[months])
+  // React.useEffect(()=>{
+  //   if(months == 0){
+  //     return;
+  //   }
+  //   alert(months)
+  // },[months])
   return (
     <div>
         <Box
