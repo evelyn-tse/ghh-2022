@@ -21,7 +21,7 @@ const RoiCalc = () => {
         <StartingAmountTextField startingAmount={startingAmount} setStartingAmount={setStartingAmount} buttonClicked={buttonClicked}/>
         <p/>
         <Button variant="contained" onClick={() => {setButtonClicked(!buttonClicked)}}>Submit</Button>
-        <InvestTable returnVal={returnVal} years={years} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
+        <InvestTable buttonClicked={buttonClicked} returnVal={returnVal} years={years} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
     </div>
   );
 };

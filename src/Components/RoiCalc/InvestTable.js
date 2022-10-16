@@ -20,7 +20,7 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 
 
 
-const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const InvestTable = ({buttonClicked, returnVal, years, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
   const [rows, setRows] = React.useState([]);
   const createRows = ()=>{
@@ -57,7 +57,8 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
         return;
       }
       createRows();
-    },[years])
+    },[buttonClicked])
+    
   return (
     <div className="InvestTable">
   <Paper
