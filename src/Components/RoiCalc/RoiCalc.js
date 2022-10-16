@@ -19,7 +19,7 @@ const RoiCalc = () => {
   return (
     <div>
         <MainCard image={image2} imageText={"image2"} title={"ROI"} content={"Brief Description about what this page does"} linkText={"test linke text"}/>
-        <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
+        {/* <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/> */}
         <Return buttonClicked={buttonClicked} setReturnVal={setReturnVal} returnVal={returnVal} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Duration years={years} setYears={setYears} buttonClicked={buttonClicked} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <StartingAmountTextField startingAmount={startingAmount} setStartingAmount={setStartingAmount} buttonClicked={buttonClicked}/>
