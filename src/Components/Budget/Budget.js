@@ -18,10 +18,10 @@ const Budget = () => {
           <Distribution/>
         </div>
         <div className="TotalCards">
-          <Total title={"Total"} total={"$3000"} previous={"123"}/>
-          <Total title={"Total"} total={"$3000"} previous={"123"}/>
-          <Total title={"Total"} total={"$3000"} previous={"123"}/>
-          <Total title={"Total"} total={"$3000"} previous={"123"}/>
+          <Total title={"Food "} total={"$3000"} previous={"123"}/>
+          <Total title={"Bills"} total={"$3000"} previous={"123"}/>
+          <Total title={"Transportation"} total={"$3000"} previous={"123"}/>
+          <Total title={"Personal"} total={"$3000"} previous={"123"}/>
         </div>
         <DisplayFormData/>
     </div>

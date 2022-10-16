@@ -36,7 +36,7 @@ function LinearProgressWithLabel(props) {
 
 const Distribution = props => {
 
-    const [progress, setProgress] = React.useState(10);
+    const [progress, setProgress] = React.useState(20);
 
     const handleChange = (prop) => (event) => {
         setProgress({ progress, [prop]: event.target.value });

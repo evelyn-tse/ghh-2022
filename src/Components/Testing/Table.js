@@ -1,5 +1,9 @@
+import React, { useState } from 'react';
 
-function Table({tableData}){
+const Table = ({tableData}) => {
+
+    const [total, setTotal] = useState(0)
+
     return(
         <table className="table">
             <thead>
@@ -19,6 +23,7 @@ function Table({tableData}){
                             <td>{data.date}</td>
                             <td>{data.category}</td>
                             <td>{data.amount}</td>
+                            setTotal(total + data.amount)
                         </tr>
                     )
                 })
