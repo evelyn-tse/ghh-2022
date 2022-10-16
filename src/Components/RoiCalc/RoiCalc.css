@@ -1,0 +1,14 @@
+.Parameters {
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Table {
+    margin: 10px;
+}
+

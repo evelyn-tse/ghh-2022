@@ -11,6 +11,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import image2 from "../Roi/image2.jpeg";
 import "./InvestTable.css";
+import table from "./table.jpeg";
 
 
 
@@ -70,11 +71,11 @@ const InvestTable = ({buttonClicked, returnVal, years, amountMoney, setAmountMon
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundImage: `url(${image2})`,
+            backgroundImage: `url(${table})`,
         }}
         >
         {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none' }} src={image2} alt={"image2"} />}
+        {<img style={{ display: 'none' }} src={table} alt={"image2"} />}
     <Box
             sx={{
             position: 'absolute',
@@ -95,7 +96,7 @@ const InvestTable = ({buttonClicked, returnVal, years, amountMoney, setAmountMon
                     }}
                 >
                            <React.Fragment>
-      <Title>Recent Orders</Title>
+      <h2>Return on Investment</h2>
       <Table size="small">
         <TableHead>
           <TableRow>

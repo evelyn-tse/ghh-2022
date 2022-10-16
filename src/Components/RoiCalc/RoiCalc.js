@@ -6,8 +6,15 @@ import InvestTable from "./InvestTable.js";
 import Button from '@mui/material/Button';
 import StartingAmountTextField from '../RoiCalc/StartingAmountTextField'
 import MainCard from "../Roi/MainCard.js";
-import image2 from "../Roi/image2.jpeg";
-
+import main from "./main.jpg";
+import PropTypes from 'prop-types';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import "./RoiCalc.css";
 
 const RoiCalc = () => {
   const [amountMoney, setAmountMoney] = React.useState(0);
@@ -18,14 +25,19 @@ const RoiCalc = () => {
 
   return (
     <div>
-        <MainCard image={image2} imageText={"image2"} title={"ROI"} content={"Brief Description about what this page does"} linkText={"test linke text"}/>
+        <MainCard image={main} imageText={"main"} title={"Investment Calculator"} content={" This program will allow you to specify the parameters for your desired investment in order to see the impact investing can have on your future wealth."} linkText={"test linke text"}/>
         {/* <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/> */}
+        <h3 style={{textAlign: "center"}}>Input Parameters</h3>
+        <div className="Parameters">
         <Return buttonClicked={buttonClicked} setReturnVal={setReturnVal} returnVal={returnVal} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Duration years={years} setYears={setYears} buttonClicked={buttonClicked} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <StartingAmountTextField startingAmount={startingAmount} setStartingAmount={setStartingAmount} buttonClicked={buttonClicked}/>
         <p/>
         <Button variant="contained" onClick={() => {setButtonClicked(!buttonClicked)}}>Submit</Button>
+        </div>
+        <div className="Table">
         <InvestTable buttonClicked={buttonClicked} returnVal={returnVal} years={years} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
+        </div>
     </div>
   );
 };
