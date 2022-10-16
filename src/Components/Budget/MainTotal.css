@@ -1,0 +1,18 @@
+.MainContent {
+    min-height: 240px;
+    min-width: 900px;
+}
+
+
+img {
+    max-width: 25%;
+    max-height: 25%;
+    margin-left: 25px;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

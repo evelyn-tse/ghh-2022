@@ -6,19 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./InfoCard.css";
-import { flexbox } from '@mui/system';
+//import { flexbox } from '@mui/system';
 
-const cardStyle = {
-    display: "block",
-    transitionDuration: "0.3s",
-    // minHeight: "400vw",
-    // minWidth: "20vw"
-};
 
 const InfoCard = props => {
     return (
-      <div className = "InfoCard" style={cardStyle}>
-        <Card sx={{ maxWidth: 345 }}>
+      <div className = "InfoCard">
+        <Card className = "Card" sx={{ maxWidth: 345 }}>
       <CardMedia
                 component="img"
                 alt="green iguana"

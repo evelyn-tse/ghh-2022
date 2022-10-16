@@ -14,12 +14,13 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Outlet, Link } from "react-router-dom";
 const pages = [
-  { name: "Home Page", url: "home_page" },
-  { name: "Login", url: "login" },
-  { name: "Sign up", url: "signup" },
-  { name: "Investment Info", url: "investment_info_page" },
+  { name: "Home", url: "home_page" },
+  { name: "Budget Guide", url: "budget_guide" },
+  { name: "Budgeting", url: "budgeting" },
+  { name: "Investment Guide", url: "investment_guide" },
+  { name: "Investing", url: "investing" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = [];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

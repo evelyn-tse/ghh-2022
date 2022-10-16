@@ -1,0 +1,10 @@
+.InvestTable {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 0px;
+}
+
+.Content {
+    display: flex;
+    flex-wrap: wrap;
+}

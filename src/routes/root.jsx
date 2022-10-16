@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../Footer"
 import NavBar from "../NavBar"
+import React from "react";
+
 export default function Root() {
     return (
       <>

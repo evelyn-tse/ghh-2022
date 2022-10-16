@@ -1,8 +1,7 @@
 .InfoCard {
-    margin : 10px;
-    padding : 10px;
     display : flex;
     align-items : center;
+    margin: 15px;
 }
 
 .CardContent {
@@ -13,4 +12,9 @@
 .CardActions {
     display : flex;
     align-items : center;
+}
+
+.Card {
+    min-height: 100px;
+    min-width: 350px;
 }

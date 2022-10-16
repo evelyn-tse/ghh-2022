@@ -5,10 +5,10 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 //import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import "./MainCard.css";
+import "../Roi/MainCard.css";
 
 
-const MainCard = props => {
+const About = props => {
     return (
         <div className="MainCard">
         <Paper
@@ -40,7 +40,7 @@ const MainCard = props => {
                 <Box
                     sx={{
                     position: 'relative',
-                    p: { xs: 3, md: 20 },
+                    p: { xs: 3, md: 10 },
                     pr: { md: 0 },
                     }}
                 >
@@ -62,7 +62,7 @@ const MainCard = props => {
     );
   };
   
-  export default MainCard;
+  export default About;
 
 
 
