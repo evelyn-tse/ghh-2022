@@ -8,7 +8,7 @@ import StartingAmountTextField from '../RoiCalc/StartingAmountTextField'
 
 const RoiCalc = () => {
   const [amountMoney, setAmountMoney] = React.useState(0);
-  const [startingAmount, setStartingAmount] = React.useState(0);
+  const [startingAmount, setStartingAmount] = React.useState(-1);
   const [buttonClicked, setButtonClicked] = React.useState(false);
   const [years, setYears] = React.useState(-1)
   return (
@@ -16,7 +16,7 @@ const RoiCalc = () => {
         <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Return amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Duration years={years} setYears={setYears} buttonClicked={buttonClicked} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
-        <StartingAmountTextField buttonClicked={buttonClicked}/>
+        <StartingAmountTextField startingAmount={startingAmount} setStartingAmount={setStartingAmount} buttonClicked={buttonClicked}/>
         <p/>
         <Button variant="contained" onClick={() => {setButtonClicked(!buttonClicked)}}>Submit</Button>
         <InvestTable years={years} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>

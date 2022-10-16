@@ -31,6 +31,14 @@ const InvestTable = ({years, amountMoney, setAmountMoney, startingAmount, setSta
     tempRows.push({year: years})
     setRows(tempRows);
   }
+
+  React.useEffect(()=>{
+      if (startingAmount < 0){
+          return;
+      }
+      alert(startingAmount)
+  }, [startingAmount])
+
     React.useEffect(()=>{
       if(years < 0 || !years){
         return;
