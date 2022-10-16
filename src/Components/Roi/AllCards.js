@@ -1,11 +1,11 @@
 import React from "react";
 import InfoCard from "./InfoCard.js";
 import MainCard from "./MainCard.js";
-import image1 from "./image1.jpeg";
 import savings from "./savings.jpg";
 import big3 from "./big3.jpg";
 import big1 from "./big1.jpg";
 import big2 from "./big2.png";
+import big4 from "./big4.jpg";
 import rothIra from "./rothira.jpg";
 import mutual from "./mutualfund.jpg";
 import bond from "./bond.jpg";
@@ -31,6 +31,7 @@ const AllCards = () => {
             <InfoCard image={cd} title={'Certificates of Deposit'} content={"A certificate of deposit is a type of savings account with a fixed rate and term. They can have higher rates than regular savings accounts, but don't allow easy access to your money until a terms ends. However, they have guaranteed returns without much risk and is a place for savings earmarked for future use.' - Nerd Wallet"}/>
             <InfoCard image={four} title={'401(k)'} content={"'A 401(k) is a retirement savings plan that allows employees to contribute a portion of their pre-tax, employees choose the percentage, income to the plan. The contributions are invested in mutual funds, and the earnings grow tax-free until they are withdrawn from the investment account.' - Annuity Expert Advice"}/>
         </div>
+        <MainCard image={big4} imageText={"big4"} title={"What Does The Return On Investment Look Like?"} content={"Each year your wealth will increase by the return rate. To see this in action, visit our Investing page located at the top of the page."} />
     </div>
   );
 };
