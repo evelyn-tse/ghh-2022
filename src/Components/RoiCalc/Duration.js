@@ -42,7 +42,9 @@ function getStyles(name, investName, theme) {
 
 
 const Duration = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
-
+  //INCORRECT: amountMoney = amountMoney + 1
+  //INCORRECT: setAmountMoney(amountMoney+1)
+  //CORRECT: setAmountMoney(()=>amountMoney+1)
   return (
     <div>
         <Box
