@@ -12,9 +12,13 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Contact from "./routes/contact";
 import HomePage from "./routes/HomePage";
-import LogIn from "./routes/LogIn";
-import SignUp from "./routes/SignUp";
+import BudgetInfo from "./routes/BudgetGuide";
+import Budgeting from "./routes/Budgeting";
 import InvestmentInfoPage from "./routes/InvestmentInfoPage";
+import Investing from "./routes/Investing.js";
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,16 +34,20 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "login/",
-        element: <LogIn />,
+        path: "budget_guide/",
+        element: <BudgetInfo />,
       },
       {
-        path: "signup/",
-        element: <SignUp />,
+        path: "budgeting/",
+        element: <Budgeting />,
       },
       {
-        path: "investment_info_page/",
+        path: "investment_guide/",
         element: <InvestmentInfoPage />,
+      },
+      {
+        path: "investing/",
+        element: <Investing />,
       },
     ],
     

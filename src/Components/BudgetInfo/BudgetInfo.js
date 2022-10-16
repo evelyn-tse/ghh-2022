@@ -5,7 +5,6 @@ import image2 from "../Roi/image2.jpeg";
 const BudgetInfo = () => {
   return (
     <div>
-        <p>Budget Info page</p>
         <MainCard image={image2} imageText={"image2"} title={"Budget Info"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
         <MainCard image={image2} imageText={"image2"} title={"Budget Info"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
     </div>

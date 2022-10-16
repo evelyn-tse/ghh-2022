@@ -1,10 +1,10 @@
 import React from "react";
-import Budget from "../Components/Budget/Budget.js";
+import BudgetInfo from "../Components/BudgetInfo/BudgetInfo.js";
 import DisplayFormData from "../Components/Testing/DisplayFormData.js";
-export default function LogIn(props){
+export default function BudgetGuide(props){
     return (<>
     <div>
-        <Budget/>
+        <BudgetInfo/>
     </div>
     </>);
 }
