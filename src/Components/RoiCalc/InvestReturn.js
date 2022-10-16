@@ -64,7 +64,7 @@ const Return = ({buttonClicked, setReturnVal, returnVal, amountMoney, setAmountM
       if(!investmentReturn){
         return;
       }
-      setReturnVal(()=>investmentReturn)
+      setReturnVal(()=>investmentReturn*.01)
     },[buttonClicked])
 
 
