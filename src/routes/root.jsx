@@ -20,6 +20,9 @@ export default function Root() {
               <li>
                 <Link to={`investment_info_page/`}>Investment Info Page</Link>
               </li>
+              <li>
+                <Link to={`budget_info_page/`}>Budget Info Page</Link>
+              </li>
             </ul>
           </nav> */}
         {/* </div> */}

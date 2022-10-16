@@ -18,6 +18,7 @@ const pages = [
   { name: "Login", url: "login" },
   { name: "Sign up", url: "signup" },
   { name: "Investment Info", url: "investment_info_page" },
+  { name: "Budget Info", url: "budget_info_page" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
