@@ -48,7 +48,7 @@ function getStyles(name, investName, theme) {
 const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
     const theme = useTheme();
-    const [investName, setInvestName] = React.useState([]);
+    const [investName, setInvestName] = React.useState();
   
     const handleChange = (event) => {
       const {
@@ -56,9 +56,16 @@ const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}
       } = event;
       setInvestName(
         // On autofill we get a stringified value.
-        typeof value === 'string' ? value.split(',') : value,
+        typeof value === 'string' ? parseInt(value) : value,
       );
     };
+
+    React.useEffect(()=>{
+      if(!investName){
+        return;
+      }
+      alert(investName);
+    },[investName])
 
   return (
     <div>
@@ -76,7 +83,7 @@ const Return = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}
             <MenuItem
               key={name}
               value={name}
-              style={getStyles(name, investName, theme)}
+              // style={getStyles(name, investName, theme)}
             >
               {name}
             </MenuItem>
