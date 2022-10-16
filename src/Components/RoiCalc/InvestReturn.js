@@ -67,12 +67,6 @@ const Return = ({buttonClicked, setReturnVal, returnVal, amountMoney, setAmountM
       setReturnVal(()=>investmentReturn)
     },[buttonClicked])
 
-    React.useEffect(()=>{
-      if(!returnVal){
-        return;
-      }
-      alert(returnVal)
-    },[returnVal])
 
   return (
     <div>

@@ -12,6 +12,13 @@ const RoiCalc = () => {
   const [buttonClicked, setButtonClicked] = React.useState(false);
   const [years, setYears] = React.useState(-1)
   const [returnVal, setReturnVal] = React.useState()
+
+  React.useEffect(()=>{
+    if(!returnVal){
+      return;
+    }
+    alert(returnVal)
+  },[returnVal])
   return (
     <div>
         <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
