@@ -20,7 +20,7 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 
 
 
-const InvestTable = ({years, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
   const [rows, setRows] = React.useState([]);
   const createRows = ()=>{
@@ -31,6 +31,13 @@ const InvestTable = ({years, amountMoney, setAmountMoney, startingAmount, setSta
     tempRows.push({year: years})
     setRows(tempRows);
   }
+
+  React.useEffect(()=>{
+    if(!returnVal){
+      return;
+    }
+    alert(returnVal)
+  },[returnVal])
 
   React.useEffect(()=>{
       if (startingAmount < 0){
