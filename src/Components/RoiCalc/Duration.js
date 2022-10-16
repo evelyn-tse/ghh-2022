@@ -41,14 +41,25 @@ function getStyles(name, investName, theme) {
 }
 
 
-const Duration = ({buttonClicked, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const Duration = ({months, setMonths, buttonClicked, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
   //INCORRECT: amountMoney = amountMoney + 1
   //INCORRECT: setAmountMoney(amountMoney+1)
   //CORRECT: setAmountMoney(()=>amountMoney+1)
+  
+  const [monthTextField, setMonthTextField] = React.useState(-1)
+  React.useEffect(()=>{
+    if(monthTextField == -1){
+      return;
+    }
+    setMonths(monthTextField)
+  }, [buttonClicked])
 
   React.useEffect(()=>{
-    alert("clicked")
-  }, [buttonClicked])
+    if(months == 0){
+      return;
+    }
+    alert(months)
+  },[months])
   return (
     <div>
         <Box
@@ -63,6 +74,7 @@ const Duration = ({buttonClicked, amountMoney, setAmountMoney, startingAmount, s
         <TextField
           id="outlined-number"
           label="Number"
+          onChange={(event)=>{setMonthTextField(event.target.value)}}
           type="number"
           min="1"
           max="100"
