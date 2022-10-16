@@ -45,7 +45,7 @@ function getStyles(name, investmentReturn, theme) {
 }
 
 
-const Return = ({buttonClicked, setReturnVal, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const Return = ({buttonClicked, setReturnVal, returnVal, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
     const theme = useTheme();
     const [investmentReturn, setInvestmentReturn] = React.useState();
