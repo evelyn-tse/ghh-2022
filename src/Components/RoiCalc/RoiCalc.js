@@ -5,6 +5,9 @@ import Duration from "./Duration.js";
 import InvestTable from "./InvestTable.js";
 import Button from '@mui/material/Button';
 import StartingAmountTextField from '../RoiCalc/StartingAmountTextField'
+import MainCard from "../Roi/MainCard.js";
+import image2 from "../Roi/image2.jpeg";
+
 
 const RoiCalc = () => {
   const [amountMoney, setAmountMoney] = React.useState(0);
@@ -15,6 +18,7 @@ const RoiCalc = () => {
 
   return (
     <div>
+        <MainCard image={image2} imageText={"image2"} title={"ROI"} content={"Brief Description about what this page does"} linkText={"test linke text"}/>
         <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Return buttonClicked={buttonClicked} setReturnVal={setReturnVal} returnVal={returnVal} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Duration years={years} setYears={setYears} buttonClicked={buttonClicked} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>

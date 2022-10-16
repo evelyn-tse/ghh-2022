@@ -1,0 +1,18 @@
+.Accordian {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.FormOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Submit {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}

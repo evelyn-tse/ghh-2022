@@ -1,0 +1,11 @@
+.TotalCard {
+    margin : 9px;
+    padding : 10px;
+    display : flex;
+    align-items : center;
+}
+
+.CardContent {
+    min-height: 100px;
+    min-width: 250px;
+}
