@@ -1,10 +1,9 @@
-.InvestTable {
+.Accordian {
     margin-left: 75px;
     margin-right: 75px;
-    margin-top: 0px;
 }
 
-.Content {
+.FormOptions {
     display: flex;
-    flex-wrap: wrap;
 }
+

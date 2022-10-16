@@ -5,11 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import "./InfoCard.css";
+import "../Roi/InfoCard.css";
 //import { flexbox } from '@mui/system';
 
 
-const InfoCard = props => {
+const MainTotal = props => {
     return (
       <div className = "InfoCard">
         <Card className = "Card" sx={{ maxWidth: 345 }}>
@@ -26,11 +26,6 @@ const InfoCard = props => {
         <Typography variant="body2" color="text.secondary">{props.content}
         </Typography>
       </CardContent>
-      <CardActions>
-        <div className = "CardActions">
-            <Button size="small">Learn More</Button>
-        </div>
-      </CardActions>
     </Card>
       </div>
     );
@@ -38,4 +33,4 @@ const InfoCard = props => {
 
 
 
-export default InfoCard;
+export default MainTotal;
