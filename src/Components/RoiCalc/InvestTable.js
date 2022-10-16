@@ -32,19 +32,19 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
     setRows(tempRows);
   }
 
-  React.useEffect(()=>{
-    if(!returnVal){
-      return;
-    }
-    alert(returnVal)
-  },[returnVal])
+  // React.useEffect(()=>{
+  //   if(!returnVal){
+  //     return;
+  //   }
+  //   alert(returnVal)
+  // },[returnVal])
 
-  React.useEffect(()=>{
-      if (startingAmount < 0){
-          return;
-      }
-      alert(startingAmount)
-  }, [startingAmount])
+  // React.useEffect(()=>{
+  //     if (startingAmount < 0){
+  //         return;
+  //     }
+  //     alert(startingAmount)
+  // }, [startingAmount])
 
     React.useEffect(()=>{
       if(years < 0 || !years){
@@ -93,6 +93,7 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
         <TableHead>
           <TableRow>
             <TableCell>Years</TableCell>
+            <TableCell>Return of Investment</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
