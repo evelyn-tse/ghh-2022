@@ -8,10 +8,10 @@ import StartingAmountTextField from '../RoiCalc/StartingAmountTextField'
 
 const RoiCalc = () => {
   const [amountMoney, setAmountMoney] = React.useState(0);
-  const [startingAmount, setStartingAmount] = React.useState(-1);
+  const [startingAmount, setStartingAmount] = React.useState(-1);//starting amount
   const [buttonClicked, setButtonClicked] = React.useState(false);
-  const [years, setYears] = React.useState(-1)
-  const [returnVal, setReturnVal] = React.useState()
+  const [years, setYears] = React.useState(-1)//duration
+  const [returnVal, setReturnVal] = React.useState()//return rate
 
   return (
     <div>
