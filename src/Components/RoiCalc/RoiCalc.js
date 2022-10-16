@@ -16,7 +16,7 @@ const RoiCalc = () => {
         <Parameters amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Return amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
         <Duration years={years} setYears={setYears} buttonClicked={buttonClicked} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
-        <StartingAmountTextField />
+        <StartingAmountTextField buttonClicked={buttonClicked}/>
         <p/>
         <Button variant="contained" onClick={() => {setButtonClicked(!buttonClicked)}}>Submit</Button>
         <InvestTable years={years} amountMoney={amountMoney} setAmountMoney={setAmountMoney} startingAmount={startingAmount} setStartingAmount={setStartingAmount}/>
