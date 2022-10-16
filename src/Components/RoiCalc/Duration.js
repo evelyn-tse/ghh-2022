@@ -41,10 +41,14 @@ function getStyles(name, investName, theme) {
 }
 
 
-const Duration = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
+const Duration = ({buttonClicked, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
   //INCORRECT: amountMoney = amountMoney + 1
   //INCORRECT: setAmountMoney(amountMoney+1)
   //CORRECT: setAmountMoney(()=>amountMoney+1)
+
+  React.useEffect(()=>{
+    alert("clicked")
+  }, [buttonClicked])
   return (
     <div>
         <Box
