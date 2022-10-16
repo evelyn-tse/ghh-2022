@@ -21,10 +21,11 @@ const MainCard = props => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundImage: `url(${props.image})`,
+            opacity: '0.8',
         }}
         >
         {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none' }} src={props.image} alt={props.imageText} />}
+        {<img style={{ display: 'none'}} src={props.image} alt={props.imageText} />}
         <Box
             sx={{
             position: 'absolute',

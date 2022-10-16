@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import "../Roi/InfoCard.css";
+// import "../Roi/InfoCard.css";
 import Title from '../RoiCalc/Title.js';
 import "./MainTotal.css";
 import budget from "./budget.jpg";
@@ -25,7 +25,7 @@ const MainTotal = props => {
             </Typography>
           </div>
           <div className="Image" >
-          <img src={budget}/>
+          <img className="budgetimg" src={budget}/>
           </div>
         </div>
         

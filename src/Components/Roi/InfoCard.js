@@ -14,11 +14,11 @@ const InfoCard = props => {
       <div className = "InfoCard">
         <Card className = "Card" sx={{ maxWidth: 345 }}>
       <CardMedia
-                component="img"
-                alt="green iguana"
-                height="140"
-                image={props.image}
-      ></CardMedia>
+        component="img"
+        height="140"
+        image={props.image}
+        alt="image"
+      />
       <CardContent className = "CardContent">
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
@@ -28,7 +28,7 @@ const InfoCard = props => {
       </CardContent>
       <CardActions>
         <div className = "CardActions">
-            <Button size="small">Learn More</Button>
+            <Button size="small" href={props.link}>Learn More</Button>
         </div>
       </CardActions>
     </Card>

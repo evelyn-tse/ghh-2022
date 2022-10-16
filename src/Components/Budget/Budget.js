@@ -11,7 +11,7 @@ import DisplayFormData from "../Testing/DisplayFormData.js";
 const Budget = () => {
   return (
     <div>
-        <About image={image2} imageText={"image2"} title={"Expenses"} content={"Brief Description about what this page does"} linkText={"test linke text"}/>
+        <About image={image2} imageText={"image2"} title={"Expenses"} content={"Brief Description about what this page does"}/>
         {/* <Expense/> */}
         <div className="MainTotalCards">
           <MainTotal image={image2} title={"Total"} total={"$3000"} date={"May 2022 - Present"}/>

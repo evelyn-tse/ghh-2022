@@ -4,10 +4,10 @@
     margin: 15px;
 }
 
-.CardContent {
+/* .CardContent {
     min-height: 100px;
-    min-width: 300px;
-}
+    min-width: 500px;
+} */
 
 .CardActions {
     display : flex;
