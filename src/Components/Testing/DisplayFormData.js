@@ -13,6 +13,8 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import "../RoiCalc/InvestTable.css";
+import table from "./table.png";
+
 
 const DisplayFormData = () => {
 
@@ -53,11 +55,11 @@ const DisplayFormData = () => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundImage: `url(${image2})`,
+            backgroundImage: `url(${table})`,
         }}
         >
         {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none' }} src={image2} alt={"image2"} />}
+        {<img style={{ display: 'none' }} src={table} alt={"table"} />}
     <Box
             sx={{
             position: 'absolute',

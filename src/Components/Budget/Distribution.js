@@ -36,11 +36,19 @@ function LinearProgressWithLabel(props) {
 
 const Distribution = props => {
 
-    const [progress, setProgress] = React.useState(20);
+    const [progress1, setProgress1] = React.useState(15);
+    const [progress2, setProgress2] = React.useState(59);
+    const [progress3, setProgress3] = React.useState(1);
+    const [progress4, setProgress4] = React.useState(25);
+
 
     const handleChange = (prop) => (event) => {
-        setProgress({ progress, [prop]: event.target.value });
-      };
+        setProgress1({ progress1, [prop]: event.target.value });
+        setProgress2({ progress2, [prop]: event.target.value });
+        setProgress3({ progress3, [prop]: event.target.value });
+        setProgress4({ progress4, [prop]: event.target.value });
+
+    };
 
     return (
       <div className = "InfoCard">
@@ -50,25 +58,25 @@ const Distribution = props => {
         <div className="Distribution">
         <p>Food</p>
         <Box sx={{ width: '100%' }}>
-            <LinearProgressWithLabel value={progress} />             
+            <LinearProgressWithLabel value={progress1} />             
         </Box>
         </div>
         <div className="Distribution">
         <p>Bills</p>
         <Box sx={{ width: '100%' }}>
-            <LinearProgressWithLabel value={progress} />             
+            <LinearProgressWithLabel value={progress2} />             
         </Box>
         </div>
         <div className="Distribution">
         <p>Transportation</p>
         <Box sx={{ width: '100%' }}>
-            <LinearProgressWithLabel value={progress} />             
+            <LinearProgressWithLabel value={progress3} />             
         </Box>
         </div>
         <div className="Distribution">
         <p>Personal</p>
         <Box sx={{ width: '100%' }}>
-            <LinearProgressWithLabel value={progress} />             
+            <LinearProgressWithLabel value={progress4} />             
         </Box>
         </div>
       </CardContent>

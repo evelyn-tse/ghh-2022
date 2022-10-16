@@ -34,7 +34,10 @@ const MainTotal = props => {
         Previous Month Total: $1595.93
         </Typography>
         <Typography color="text.secondary" sx={{ flex: 1 }}>
-        Insert comparison statment
+        Monthly Goal: Have total 
+        </Typography>
+        <Typography color="text.secondary" sx={{ flex: 1 }}>
+        expenses be less than $1500.
         </Typography>
       </CardContent>
     </Card>
