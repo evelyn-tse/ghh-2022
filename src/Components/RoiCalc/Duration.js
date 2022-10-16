@@ -73,7 +73,7 @@ const Duration = ({years, setYears, buttonClicked, amountMoney, setAmountMoney, 
       <div>
         <TextField
           id="outlined-number"
-          label="Number"
+          label="Years"
           onChange={(event)=>{setYearTextField(event.target.value)}}
           type="number"
           min="1"
