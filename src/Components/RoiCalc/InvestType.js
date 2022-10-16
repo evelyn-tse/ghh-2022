@@ -37,7 +37,7 @@ function getStyles(name, investName, theme) {
 }
 
 
-const Parameters = () => {
+const Parameters = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
     const theme = useTheme();
     const [investName, setInvestName] = React.useState([]);

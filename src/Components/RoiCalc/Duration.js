@@ -41,7 +41,7 @@ function getStyles(name, investName, theme) {
 }
 
 
-const Duration = () => {
+const Duration = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
   return (
     <div>

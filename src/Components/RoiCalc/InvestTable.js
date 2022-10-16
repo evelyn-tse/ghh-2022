@@ -55,7 +55,7 @@ const rows = [
   ];
 
 
-const InvestTable = props => {
+const InvestTable = ({amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
   return (
     <div className="InvestTable">
   <Paper
