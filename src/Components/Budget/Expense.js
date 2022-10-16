@@ -9,9 +9,10 @@ import "./Expense.css";
 import ExpDate from "./ExpDate.js";
 import ExpAmount from "./ExpAmount.js";
 import Button from '@mui/material/Button';
+import FormInput from "../Testing/FormInput.js";
 
 
-const Expense = () => {
+const Expense = ({handleChange, formInputData, handleSubmit}) => {
   return (
     <div>
       <div className="Accordian">
@@ -30,7 +31,7 @@ const Expense = () => {
               <ExpType/>
               <ExpAmount/>
               <Button id="Submit" variant="contained">Submit</Button>
-            </div>
+            </div> 
           </Typography>
         </AccordionDetails>
       </Accordion>

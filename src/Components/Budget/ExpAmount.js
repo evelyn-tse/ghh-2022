@@ -12,7 +12,7 @@ const ExpAmount = () => {
   });
 
   const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
+    setValues({values, [prop]: event.target.value });
   };
 
   return (
