@@ -31,8 +31,8 @@ const InvestTable = ({returnVal, years, amountMoney, setAmountMoney, startingAmo
     let tempRows = []
     for (let i = 0; i < years; i++) {
       tempRows.push({year: i, return_value: temp_return_value, total: amount})
-      temp_return_value = amount * returnVal
-      amount = amount + temp_return_value
+      temp_return_value = Math.round(amount * returnVal * 100)/100
+      amount = Math.round((amount + temp_return_value) * 100)/100
     }
     tempRows.push({year: years, return_value: temp_return_value, total: amount})
     setRows(tempRows);
