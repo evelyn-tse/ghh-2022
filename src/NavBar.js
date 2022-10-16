@@ -61,7 +61,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            FIFO
+            FINFO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
