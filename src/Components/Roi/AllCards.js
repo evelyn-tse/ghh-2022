@@ -8,8 +8,8 @@ const AllCards = () => {
   return (
     <div>
         <div className="MainCards">
-            <MainCard image={image1} title={"What is investing?"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
-            <MainCard image={image1} title={"Why should you invest?"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
+            <MainCard image={image1} imageText={"image1"} title={"What is investing?"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
+            <MainCard image={image1} imageText={"image1"} title={"Why should you invest?"} content={"test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content test content text content text content "} linkText={"test linke text"}/>
         </div>
         <div className="InfoCards">
             <InfoCard image={image1} title={'Roth IRA'} content={"Description of Roth IRA"}/>

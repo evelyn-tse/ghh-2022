@@ -1,9 +1,9 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
+//import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import "./MainCard.css";
 
@@ -24,7 +24,7 @@ const MainCard = props => {
         }}
         >
         {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none' }} src={props.image} />}
+        {<img style={{ display: 'none' }} src={props.image} alt={props.imageText} />}
         <Box
             sx={{
             position: 'absolute',
