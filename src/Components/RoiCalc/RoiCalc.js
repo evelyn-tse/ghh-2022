@@ -1,5 +1,4 @@
 import React from "react";
-import Parameters from "./InvestType.js";
 import Return from "./InvestReturn.js";
 import Duration from "./Duration.js";
 import InvestTable from "./InvestTable.js";
@@ -7,13 +6,6 @@ import Button from '@mui/material/Button';
 import StartingAmountTextField from '../RoiCalc/StartingAmountTextField'
 import MainCard from "../Roi/MainCard.js";
 import main from "./main.jpg";
-import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import "./RoiCalc.css";
 
 const RoiCalc = () => {

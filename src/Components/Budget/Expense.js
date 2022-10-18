@@ -9,7 +9,6 @@ import "./Expense.css";
 import ExpDate from "./ExpDate.js";
 import ExpAmount from "./ExpAmount.js";
 import Button from '@mui/material/Button';
-import FormInput from "../Testing/FormInput.js";
 
 
 const Expense = ({handleChange, formInputData, handleSubmit}) => {

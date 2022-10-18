@@ -1,6 +1,5 @@
 import React from "react";
 import MainCard from "../Roi/MainCard.js";
-import image2 from "./image2.jpg";
 import big1 from "./big1.jpg";
 import big2 from "./big2.jpg";
 

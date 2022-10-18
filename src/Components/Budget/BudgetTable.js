@@ -1,17 +1,14 @@
 import * as React from 'react';
-import Link from '@mui/material/Link';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Title from '../RoiCalc/Title';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import image2 from "../Roi/image2.jpeg";
 import "../RoiCalc/InvestTable.css";
-import DisplayFormData from "../Testing/DisplayFormData";
 
 
 function createData(id, date, category, amount) {

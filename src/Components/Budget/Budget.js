@@ -1,5 +1,4 @@
 import React from "react";
-import Expense from "./Expense.js";
 import Total from "./Total.js";
 import "./Budget.css";
 import About from "./About.js";
@@ -13,7 +12,6 @@ const Budget = () => {
   return (
     <div>
         <About image={image5} imageText={"image5"} title={"Budgeting"} content={"Welcome to the budgeting the page! Add all your expenses here and we will tally them up into the table. You can also visually see what your expenses are via the pie graph. Well, budget away!"}/>
-        {/* <Expense/> */}
         <div className="MainTotalCards">
           <MainTotal image={image2} title={"Total"} total={"$1004.98"}/>
           <Distribution/>

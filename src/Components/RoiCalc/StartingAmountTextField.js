@@ -1,5 +1,6 @@
 import React from "react";
 import TextField from '@mui/material/TextField';
+
 export default function StartingAmountTextField ({startingAmount, setStartingAmount, buttonClicked}){
     const [startingAmountTextField, setStartingAmountTextField] = React.useState(-1);
 
