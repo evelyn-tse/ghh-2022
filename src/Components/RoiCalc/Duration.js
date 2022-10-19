@@ -52,6 +52,7 @@ const Duration = ({years, setYears, buttonClicked, amountMoney, setAmountMoney, 
       return;
     }
     setYears(yearTextField)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [buttonClicked])
 
   // React.useEffect(()=>{

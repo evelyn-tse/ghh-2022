@@ -9,6 +9,7 @@ export default function StartingAmountTextField ({startingAmount, setStartingAmo
             return;
         }
         setStartingAmount(startingAmountTextField)
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [buttonClicked])
     return(
         <>

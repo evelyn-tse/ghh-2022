@@ -55,6 +55,7 @@ const InvestTable = ({buttonClicked, returnVal, years, amountMoney, setAmountMon
         return;
       }
       createRows();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[buttonClicked])
     
   return (

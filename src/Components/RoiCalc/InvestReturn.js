@@ -64,6 +64,7 @@ const Return = ({buttonClicked, setReturnVal, returnVal, amountMoney, setAmountM
         return;
       }
       setReturnVal(()=>investmentReturn*.01)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[buttonClicked])
 
 
