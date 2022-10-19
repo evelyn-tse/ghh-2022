@@ -33,10 +33,16 @@ function LinearProgressWithLabel(props) {
 
 const Distribution = props => {
 
-    const [progress1, setProgress1] = React.useState(15);
-    const [progress2, setProgress2] = React.useState(59);
-    const [progress3, setProgress3] = React.useState(1);
-    const [progress4, setProgress4] = React.useState(25);
+  const [progress1] = React.useState(15);
+  const [progress2] = React.useState(59);
+  const [progress3] = React.useState(1);
+  const [progress4] = React.useState(25);
+
+
+    // const [progress1, setProgress1] = React.useState(15);
+    // const [progress2, setProgress2] = React.useState(59);
+    // const [progress3, setProgress3] = React.useState(1);
+    // const [progress4, setProgress4] = React.useState(25);
 
 
     // const handleChange = (prop) => (event) => {
