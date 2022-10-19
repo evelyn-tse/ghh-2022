@@ -21,7 +21,7 @@ const MainTotal = props => {
             </Typography>
           </div>
           <div className="Image" >
-          <img className="budgetimg" src={budget}/>
+          <img className="budgetimg" src={budget} alt={"budget"}/>
           </div>
         </div>
         

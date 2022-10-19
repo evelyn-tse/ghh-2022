@@ -12,9 +12,9 @@ import table from "./table.jpeg";
 
 
 
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-    return { id, date, name, shipTo, paymentMethod, amount };
-}
+// function createData(id, date, name, shipTo, paymentMethod, amount) {
+//     return { id, date, name, shipTo, paymentMethod, amount };
+// }
 
 
 

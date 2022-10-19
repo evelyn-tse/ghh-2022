@@ -6,9 +6,9 @@ import CardContent from '@mui/material/CardContent';
 import "./Total.css";
 
 
-function preventDefault(event) {
-  event.preventDefault();
-}
+// function preventDefault(event) {
+//   event.preventDefault();
+// }
 
 const Total = props => {
   return (

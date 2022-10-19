@@ -39,13 +39,13 @@ const Distribution = props => {
     const [progress4, setProgress4] = React.useState(25);
 
 
-    const handleChange = (prop) => (event) => {
-        setProgress1({ progress1, [prop]: event.target.value });
-        setProgress2({ progress2, [prop]: event.target.value });
-        setProgress3({ progress3, [prop]: event.target.value });
-        setProgress4({ progress4, [prop]: event.target.value });
+    // const handleChange = (prop) => (event) => {
+    //     setProgress1({ progress1, [prop]: event.target.value });
+    //     setProgress2({ progress2, [prop]: event.target.value });
+    //     setProgress3({ progress3, [prop]: event.target.value });
+    //     setProgress4({ progress4, [prop]: event.target.value });
 
-    };
+    // };
 
     return (
       <div className = "InfoCard">

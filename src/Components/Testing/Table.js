@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Table = ({tableData}) => {
 
-    const [total, setTotal] = useState(0)
+    // const [total, setTotal] = useState(0)
 
     return(
         <table className="table">

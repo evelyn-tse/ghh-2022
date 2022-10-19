@@ -35,19 +35,19 @@ const names = [
   "15"
 ];
 
-function getStyles(name, investmentReturn, theme) {
-  return {
-    fontWeight:
-      investmentReturn.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
+// function getStyles(name, investmentReturn, theme) {
+//   return {
+//     fontWeight:
+//       investmentReturn.indexOf(name) === -1
+//         ? theme.typography.fontWeightRegular
+//         : theme.typography.fontWeightMedium,
+//   };
+// }
 
 
 const Return = ({buttonClicked, setReturnVal, returnVal, amountMoney, setAmountMoney, startingAmount, setStartingAmount}) => {
 
-    const theme = useTheme();
+    // const theme = useTheme();
     const [investmentReturn, setInvestmentReturn] = React.useState();
   
     const handleChange = (event) => {

@@ -17,6 +17,7 @@ export default function Contact() {
         <img
           key={contact.avatar}
           src={contact.avatar || null}
+          alt={"image"}
         />
       </div>
 
